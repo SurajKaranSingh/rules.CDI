@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rules, Laws &amp; Amendments of the Civil Defence</title>
+  <style>
+    /* Global reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Base body styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header section with background image and centered content */
+    header {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                  url('header-image.jpg') no-repeat center center/cover;
+      height: 50vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    /* Container for header content (logo and title) */
+    .header-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Logo styling */
+    .header-content img.logo {
+      width: 120px;  /* Adjust size as needed */
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    /* Title styling */
+    .header-content h1 {
+      background: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      padding: 15px 25px;
+      border-radius: 5px;
+      font-size: 2.5em;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .header-content h1 {
+        font-size: 2em;
+        padding: 12px 20px;
+      }
+      .header-content img.logo {
+        width: 90px;
+        margin-bottom: 15px;
+      }
+    }
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    /* Responsive grid layout for cards */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    /* Card styles */
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .card button {
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+      padding: 15px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin: 20px;
+      border-radius: 5px;
+    }
+    .card button:hover {
+      background-color: #0056b3;
+    }
+    /* Adjust styles on smaller devices */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2em;
+        padding: 15px 20px;
+      }
+      .card button {
+        padding: 12px;
+        font-size: 0.9em;
+        margin: 15px;
+      }
+    }
+     /* Footer styling */
+     footer {
+      background-color: #333;
+      color: #fff;
+      padding: 40px 20px;
+      font-family: Arial, sans-serif;
+    }
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: flex-start;
+      text-align: center;
+    }
+    .footer-logo,
+    .footer-map,
+    .footer-contact {
+      flex: 1 1 300px;
+      margin: 10px;
+    }
+    /* Logo image styling */
+    .footer-logo img {
+      max-width: 150px;
+      width: 100%;
+      height: auto;
+    }
+    /* Map styling */
+    .footer-map iframe {
+      width: 100%;
+      height: 200px;
+      border: none;
+    }
+    /* Contact info styling */
+    .footer-contact h3 {
+      margin-bottom: 10px;
+    }
+    .footer-contact a {
+      color: #fff;
+      text-decoration: none;
+    }
+    .footer-contact a:hover {
+      text-decoration: underline;
+    }
+    .footer-bottom {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 0.9em;
+      color: #ccc;
+    }
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .footer-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    #moveToTopBtn {
+      display: none; /* Hidden by default */
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: #007BFF;
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 50%;
+      transition: background-color 0.3s;
+    }
+    
+    #moveToTopBtn:hover {
+      background-color: #0056b3;
+    }
+    
+
+  </style>
+</head>
+<body>
+  <!-- Enhanced Header with Logo and Title -->
+  <header>
+    <div class="header-content">
+      <img src="image/cdlogo1.jpg" alt="Civil Defence Logo" class="logo">
+      <h1>Rules, Laws &amp; Amendments of the Civil Defence</h1>
+    </div>
+  </header>
+  <div class="container">
+    <div class="grid">
+      <!-- Card 1 -->
+      <div class="card">
+        <img src="image/CD RULES 1968.png" alt="Civil Defence Document">
+        <button onclick="window.open('image/CD Rules, 1968.pdf', '_blank')">Rules 1968</button>
+        </div>
+      <!-- Card 2 -->
+      <div class="card">
+        <img src="image/CD REGULATION 1968.png" alt="Civil Defence Document">
+        <button onclick="window.open('image/CD Regulation, 1968.pdf', '_blank')">Regulation 1968</button>
+      </div>
+      <!-- Card 3 -->
+      <div class="card">
+        <img src="image/CD ACT 1968.png" alt="Civil Defence Document">
+        <button onclick="window.open('image/CD Act, 1968.pdf', '_blank')"> Act 1968</button>
+      
+        </div>
+      <!-- card 4-->
+      <div class="card">
+        <img src="image/CD ACT NEW 1968.png" alt="Civil Defence Document">
+        <button onclick="window.open('image/CD Act New, 1968.pdf', '_blank')">New Act 1968</button>
+      
+        </div>
+
+        <div class="card">
+            <img src="image/AMMENDMENT CD REGULATIO 1971.png" alt="Civil Defence Document">
+            <button onclick="window.open('image/Amendment to CD Regulations 1971.pdf', '_blank')">Regulation 1971</button>
+          
+            </div>
+
+
+            <div class="card">
+                <img src="image/AMMENDMENT TO CD REGULATION 1973.png" alt="Civil Defence Document">
+                <button onclick="window.open('image/Amendment to CD Regulations 1973.pdf', '_blank')">Regulation 1973</button>
+              
+                </div>
+
+
+                <div class="card">
+                    <img src="image/ACT RULES & REGULATION AMMENDMENT 1975.png" alt="Civil Defence Document">
+                    <button onclick="window.open('image/Amendment 1975 to Act, Rules, Regulation.pdf', '_blank')">Amendment 1975</button>
+                  
+                    </div>
+
+
+                    <div class="card">
+                        <img src="image/Screenshot 2025-04-12 153701.png" alt="Civil Defence Document">
+                        <button onclick="window.open('image/GeneralPrinciplesCD2003.pdf', '_blank')">General Principles 2003</button>
+                      
+                        </div>
+
+
+                    
+                        <div class="card">
+                            <img src="image/ACT RULES & REGULATION 2010.png" alt="Civil Defence Document">
+                            <button onclick="window.open('image/Act, Rule and Regulations, 2010 24-May-2020 14-49-19(1).pdf', '_blank')">Amendment 2010</button>
+                          
+                            </div>
+
+
+                            <div class="card">
+                                <img src="image/Screenshot 2025-04-12 153324.png" alt="Civil Defence Document">
+                                <button onclick="window.open('image/homeguardact1947.pdf', '_blank')">Homeguard Act 1947 </button>
+                              
+                                </div>
+
+
+                                <div class="card">
+                                    <img src="image/Screenshot 2025-04-12 153348.png" alt="Civil Defence Document">
+                                    <button onclick="window.open('image/HOMEGUARDS ACTS & RULES 2016.pdf', '_blank')">Homeguard Act 2016</button>
+                                  
+                                    </div>
+
+
+                                    <div class="card">
+                                        <img src="image/DEFENCE OF INDIA ACT 1971.png" alt="Civil Defence Document">
+                                        <button onclick="window.open('image/The_Defence_of_india_act,_1971.pdf', '_blank')">Defence of India Act 1971</button>
+                                      
+                                        </div>
+      <!-- Add more cards as needed -->
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-container">
+      <!-- Logo Section -->
+      <div class="footer-logo">
+        <img src="image/cdlogo1.jpg" alt="Civil Defence Logo">
+        <h1>Civil Defence Indore<br> Government of India </h1>
+        
+      </div>
+      <!-- Map Section -->
+      <div class="footer-map">
+        <!-- Replace the src link with your own Google Map embed URL or any other map provider -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14721.87293958974!2d75.85889744400585!3d22.710831414387652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd24e1d324e7%3A0x9e157b61a01f5504!2sHome%20Guard%20Office!5e0!3m2!1sen!2sin!4v1744452867791!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <!-- Contact Section -->
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <p>Email: <a href="mailto:info@civildefence.com">info@civildefence.com</a></p>
+        <p>Mobile: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom"text-align-center>
+        &copy; Civil Defence Indore.
+      </div>
+  </footer>
+
+  <!-- Move-to-Top Button -->
+  <button id="moveToTopBtn" title="Go to Top">&#8679;</button>
+  
+  <!-- JavaScript for Move-to-Top Button -->
+  <script>
+    const moveToTopBtn = document.getElementById("moveToTopBtn");
+
+    // Show the button when scrolled down 20px from the top
+    window.onscroll = function() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          moveToTopBtn.style.display = "block";
+      } else {
+          moveToTopBtn.style.display = "none";
+      }
+    };
+
+    // Smooth scroll to top when button is clicked
+    moveToTopBtn.addEventListener("click", function(){
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
